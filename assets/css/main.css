@@ -5,6 +5,18 @@ h1 {
   padding: 0px !important;
 }
 
+body {
+  --hr-line-offset: 25%;
+  --hr-color: lightsalmon;
+}
+
+:root hr {
+  
+  color: lightsalmon !important;
+  height: 1px !important;
+  opacity: 0.4;
+}
+
 
 
 /* global classes */
@@ -39,10 +51,25 @@ input {
   height: 50px;
 }
 
+.hr-custom {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.color-purple{
+  color: rgba(56, 29, 219, 1);
+
+}
+
 /* custom classes */
 
 .custom-background-purple {
   background: #381ddb !important;
+}
+
+.custom-width-two{
+  color:#381ddb !important;;
+
 }
 
 .hero-section .text-one {
@@ -143,7 +170,7 @@ input {
   }
 }
 
- .custom-style-button {
+.custom-style-button {
   font-family: Raleway;
   font-size: 16px;
   font-weight: 500;
@@ -155,7 +182,7 @@ input {
 }
 
 @media only screen and (max-width: 425px) {
-   .custom-style-button {
+  .custom-style-button {
     width: 157px;
     height: 42px;
     font-size: 14px;
@@ -164,111 +191,194 @@ input {
   }
 }
 
+/* Section 2 css */
 
-
-/* section-3 css */
-
-
-
-
-
-
-/* custom-bg-img */
-.custom-bg-img{
-
-  /* The image brightness is reduced via online tool to attain the nearest possible tone to the figma image */
-  background-image: url('../img/image.png');
-
-  background-size: 100vw 100vh;
-  background-repeat:no-repeat;
-  background-position:center;
-
+.section-2 {
+  margin-top: 130px;
 }
+
+.section-2 .heading-text {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44.2px;
+  text-align: center;
+  color: #222222;
+}
+
+.section-2 .paragraph-text {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 40px !important;
+  color: rgba(34, 34, 34, 0.7);
+}
+
+.section-2 .services{
+  margin-top: 60px;
+}
+.section-2 .card{
+  max-width: 310px;
+  height: 331px;
+}
+
+.section-2 .gap-custom{
+  gap: 75px !important;
+}
+
+.section-2 .card{
+  border-color: rgba(56, 29, 219, 1);
+  ;
+}
+
+.section-2 .card-image{
+  max-height: 70px;
+  max-width: 70px;
+  color: #381ddb;
+  fill: #381ddb;
+}
+
+.section-2 .text-heading{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 38px;
+  text-align: left;
+  margin-top: 40px !important;
+}
+
+.section-2 .text-paragraph{
+ 
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 17px !important;
+}
+
+
 
 
 @media only screen and (max-width: 425px) {
-  .custom-bg-img{
+  .section-2 {
+    margin-top: 0px;
+}
 
-   
-  
-   
 
-    background-size: cover;
-  
-  
+  .section-2 .services{
+    margin-top: 24px;
   }
 
-  .section-3 .mt-custom-two{
+  .section-2 .gap-custom{
+    gap: 16px !important;
+  }
+ 
+  .section-2 .heading-text {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    text-align: center;
+  }
+
+  .section-2 .paragraph-text {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 20px !important;
+  }
+
+  .section-2 .card {
+    max-width: 100%;
+    height: 331px;
+}
+
+  
+}
+
+/* section-3 css */
+
+/* custom-bg-img */
+.custom-bg-img {
+  /* The image brightness is reduced via online tool to attain the nearest possible tone to the figma image */
+  background-image: url("../img/image.png");
+
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mt-custom-section-3{
+  margin-top: 130px !important;
+}
+
+@media only screen and (max-width: 425px) {
+
+  .mt-custom-section-3{
+    margin-top: 0px;
+  }
+  .custom-bg-img {
+    background-size: cover;
+  }
+
+  .section-3 .mt-custom-two {
     margin-top: 93px;
   }
-  .custom-width-container-effect
-  {
+  .custom-width-container-effect {
     margin-left: 12px;
     margin-right: 12px;
   }
-
-  
-  
 }
 
-
-
-
-.section-3 .bigger-font{
+.section-3 .bigger-font {
   font-family: Montserrat;
-font-size: 64px;
-font-weight: 800;
-line-height: 78.02px;
-text-align: center;
-color: #FFFFFF;
-
-
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 78.02px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.section-3 .smaller-font{
+.section-3 .smaller-font {
   font-family: Montserrat;
-font-size: 16px;
-font-weight: 500;
-line-height: 19.5px;
-text-align: center;
-color: #FFFFFF;
-
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.section-3 .mt-custom{
+.section-3 .mt-custom {
   margin-top: 100px;
 }
 
-
-.section-3 .mt-custom-two{
+.section-3 .mt-custom-two {
   margin-top: 93px;
 }
 
-
-
-
-
 @media only screen and (max-width: 767px) {
-  .section-3 .bigger-font{
+  .section-3 .bigger-font {
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 800;
     line-height: 43.88px;
     text-align: center;
-  
   }
-  
-  .section-3 .smaller-font{
+
+  .section-3 .smaller-font {
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
     line-height: 14.63px;
     text-align: center;
-    
-  
   }
 
-  .section-3 .mt-custom{
+  .section-3 .mt-custom {
     margin-top: 48px;
   }
 }
