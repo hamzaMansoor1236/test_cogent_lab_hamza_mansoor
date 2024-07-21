@@ -42,32 +42,47 @@
 <body class="">
 
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">Brand</a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                Menu
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-light custom-paddings-navbar">
+        <div class="container-fluid  ">
+            <div class="d-flex flex-row justify-content-center mx-auto ">
+                <a href="#" class="navbar-brand me-custom-brand " tabindex="1"><img src="./assets/img/udixnav.svg"
+                        alt="brand logo"></a>
+
+                <button type="button ms-auto"
+                    class="navbar-toggler btn btn-outline-primary  color-purple custom-border-color text-button rounded-0"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse" tabindex="2">
+                    MENU
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Profile</a>
-                    <a href="#" class="nav-item nav-link">Messages</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+
+
+
+                <div class=" d-flex flex-lg-row navbar-nav gap-md-5 ms--md-4 align-items-center">
+                    <a href="#" class="nav-item nav-link active text-nav-links color-purple "
+                        style="color: rgba(56, 29, 219, 1) !important; " tabindex="2">HOME</a>
+                    <a href="#" class="nav-item nav-link text-nav-links" tabindex="3">BLOG</a>
+                    <a href="#" class="nav-item nav-link text-nav-links" tabindex="4">PRODUCT</a>
+                    <a href="#" class="nav-item nav-link text-nav-links" tabindex="5">CONTACTS</a>
                 </div>
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Login</a>
+                <div class="navbar-nav ms-auto gap-md-4">
+                    <button class="btn   color-purple text-button " tabindex="6"> SIGN IN </button>
+                    <button tabindex="7"
+                        class="btn btn-outline-primary  color-purple custom-border-color text-button rounded-0">
+                        SIGN UP
+                    </button>
+
+
                 </div>
             </div>
         </div>
     </nav>
 
-
     <!-- main content  -->
-    <main class="main">
+    <main id="main" class="main">
 
         <!-- Section 1 hero section -->
-        <section class="hero-section  container">
+        <section id="section-hero" class="hero-section  container">
             <div class="   mx-auto  text-center custom-width-one">
 
                 <div>
@@ -77,37 +92,32 @@
                         Projects The Right Way.</h1>
                 </div>
 
-
                 <div class=" mx-auto mt-custom-one custom-width-two">
                     <p class="   text-one font-raleway   ">udix is the world’s first smart
                         workspace. We bring all your team’s
                         content together while letting you use the tools you love.</p>
                 </div>
 
-
-
                 <div class="custom-width-three mt-custom-two mx-md-auto ">
 
-                    <form action="/action_page.php" class="d-flex flex-column flex-md-row  gap-3 gap-md-4 ">
-                        <input type="text" id="hero-email" name="fname"
+                    <form action="#" class="d-flex flex-column flex-md-row  gap-3 gap-md-4 ">
+                        <input type="text" id="hero-email" name="fname" tabindex="8"
                             class="custom-width-four border border-1 rounded ps-3" placeholder="Email">
-                        <button type="submit"
+                        <button type="submit" tabindex="9"
                             class="btn text-white custom-background-purple  font-raleway custom-style-button  mx-auto mx-md-0">Subscribe</button>
                     </form>
                 </div>
             </div>
         </section>
-
-
+        <!-- horizontal rule for mobile -->
         <div class="hr-custom container">
             <div class="d-md-none">
                 <hr>
             </div>
         </div>
 
-
         <!-- Section 2 services section -->
-        <section class="container section-2">
+        <section id="section-2" class="container section-2">
             <div class="text px-4 px-md-0">
                 <h1 class="heading-text px-4 px-lg-">Solutions that will change your business forever</h1>
 
@@ -122,7 +132,8 @@
 
             <div
                 class="services  mx-auto px-3 p-md-0 col-md-12 col-lg-12 d-flex flex-column flex-md-row   gap-custom  justify-content-center">
-                <div class="card p-4 rounded-0">
+
+                <div class="card p-4 rounded-0 cursor-pointer" tabindex="10">
                     <img class="card-image" src="./assets/img/web.svg" alt="web app service icon" draggable="false">
                     <h1 class="text-heading">Web Services</h1>
                     <p class="text-paragraph">
@@ -132,7 +143,7 @@
                             class="bi bi-arrow-right-short cursor-pointer"></i></a>
                 </div>
 
-                <div class="card p-4 rounded-0 ">
+                <div class="card p-4 rounded-0 cursor-pointer" tabindex="11">
                     <img class="card-image" src="./assets/img/crm.svg" alt="crm services icon" draggable="false">
                     <h1 class="text-heading">CRM Product</h1>
                     <p class="text-paragraph">
@@ -141,7 +152,8 @@
                     <a href="#" class="color-purple  fs-3 mt-auto  "><i
                             class="bi bi-arrow-right-short cursor-pointer"></i></a>
                 </div>
-                <div class="card p-4 rounded-0">
+
+                <div class="card p-4 rounded-0 cursor-pointer" tabindex="12">
                     <img class="card-image" src="./assets/img/mobile.svg" alt="mobile app service icon"
                         draggable="false">
                     <h1 class="text-heading">Mobile App</h1>
@@ -154,21 +166,19 @@
             </div>
         </section>
 
-
+        <!-- horizontal rule for mobile -->
         <div class="hr-custom container">
             <div class="d-md-none">
                 <hr>
             </div>
         </div>
 
-
         <!-- section 3  -->
-        <section class="custom-width-container-effect mt-custom-section-3 ">
+        <section id="section-3" class="custom-width-container-effect mt-custom-section-3 ">
             <div class="section-3 px-2   custom-bg-img   d-flex  flex-column height-500px">
 
                 <div class="mt-custom ">
                     <div class="  d-flex flex-column flex-md-row gap-4  justify-content-center ">
-
 
                         <div class="col-md-3  text-center">
 
@@ -186,16 +196,11 @@
                             <h1 class="bigger-font">100 +</h1>
                             <p class="smaller-font mt-1 mt-md-3">Advertisers with udix</p>
 
-
                         </div>
-
-
-
-
 
                     </div>
                     <div class="d-flex mt-custom-two">
-                        <button type="submit"
+                        <button type="submit" tabindex="13"
                             class="btn text-white custom-background-purple  font-raleway custom-style-button  mx-auto ">Sign
                             Up Now!</button>
                     </div>
@@ -203,17 +208,15 @@
             </div>
         </section>
 
-        <!-- hr -->
+        <!-- horizontal rule for mobile -->
         <div class="hr-custom container">
             <div class="d-md-none">
                 <hr>
             </div>
         </div>
 
-
-        
         <!-- section 4 -->
-        <section class="section-4 container mt-custom">
+        <section id="section-4" class="section-4 container mt-custom">
             <div class="d-flex  flex-column-reverse flex-lg-row   mx-auto">
                 <div class=" d-flex image-div col-lg-6 img-mt-40 pb-xl-5 ">
                     <img src="./assets/img/section-4-image.png" alt="image-section-4"
@@ -237,7 +240,7 @@
                         </ul>
                     </div>
                     <div class="mt-48px  ">
-                        <a href="#" class="color-purple text-decoration-none text-link d-flex ">
+                        <a href="#" class="color-purple text-decoration-none text-link d-flex " tabindex="14">
 
                             <div>
                                 <p class="text-nowrap width-fit">Check our solutions &nbsp; </p>
@@ -256,16 +259,77 @@
 
         </section>
 
-
     </main>
 
-
     <!-- Footer section -->
-    <footer id="footer" class="footer bg-transparent">
+    <footer id="footer" class="footer  footer-bg" style="background: rgba(34, 34, 34, 0.03) !important;
+">
+        <div class="custom-container">
+            <div class="d-flex flex-column flex-lg-row">
+
+
+
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-row justify-content-center justify-content-lg-start cursor-pointer "
+                        tabindex="15">
+                        <img class="logo" src="./assets/img/udix.svg">
+                    </div>
+                    <p class="footer-paragraph handle-display ">udix is a market-leading provider of digital marketing
+                        services, using
+                        proprietary tools and methodologies to generate high-value engagement for our customers.</p>
+
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex flex-column ">
+
+                    <div class="div-links-and-button d-flex flex-row justify-content-end mx-auto me-lg-0  ">
+
+
+                        <div
+                            class="div-inner d-flex flex-column flex-md-column flex-lg-column flex-xl-row align-items-center justify-content-center justify-content-lg-end  gap-3 gap-xl-5 mt-20px mx-auto">
+                            <div class="d-flex flex-row gap-4 div-links   ">
+                                <a class="text-link" tabindex="16">Home</a>
+                                <a class="text-link" tabindex="17">Blog</a>
+                                <a class="text-link" tabindex="18">Product</a>
+                                <a class="text-link" tabindex="19">Contacts</a>
+                            </div>
+
+
+                            <div class="div-button ms-lg-auto">
+                                <button class="btn   color-purple text-button " tabindex="20"> SIGN IN </button>
+                                <button tabindex="21"
+                                    class="btn btn-outline-primary  color-purple custom-border-color text-button rounded-0">
+                                    SIGN UP
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div
+                        class="div-social-icons d-flex flex-row justify-content-center justify-content-lg-end gap-30px mt-37px align-items-center">
+                        <a class="text-link" tabindex="22"><img src="./assets/img/facebook.svg"> </a>
+                        <a class="text-link" tabindex="23"><img src="./assets/img/youtube.svg"> </a>
+                        <a class="text-link" tabindex="24"><img src="./assets/img/linkedin.svg"> </a>
+                        <a class="text-link" tabindex="25"><img src="./assets/img/google.svg"> </a>
+                        <a class="text-link" tabindex="26"><img src="./assets/img/skype.svg"> </a>
+                    </div>
+                    <p class="footer-paragraph visible-md px-4">udix is a market-leading provider of digital marketing
+                        services, using
+                        proprietary tools and methodologies to generate high-value engagement for our customers.</p>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
 
 
     </footer>
-
 
     <!-- Custom script file -->
     <script src="assets/js/main.js"></script>
@@ -277,13 +341,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <!--  -->
-
-
-
 
 
 </body>
