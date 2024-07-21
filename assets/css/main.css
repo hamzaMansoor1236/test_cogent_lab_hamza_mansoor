@@ -317,10 +317,14 @@ input {
   margin-top: 130px !important;
 }
 
+.height-500px{
+  height: 500px;
+}
+
 @media only screen and (max-width: 425px) {
 
   .mt-custom-section-3{
-    margin-top: 0px;
+    margin-top: 0px !important;
   }
   .custom-bg-img {
     background-size: cover;
