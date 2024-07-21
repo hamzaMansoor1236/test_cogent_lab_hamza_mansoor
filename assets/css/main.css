@@ -11,13 +11,14 @@ body {
 }
 
 :root hr {
-  
   color: lightsalmon !important;
   height: 1px !important;
   opacity: 0.4;
 }
 
-
+li::marker {
+  color: rgba(56, 29, 219, 1);
+}
 
 /* global classes */
 
@@ -56,9 +57,8 @@ input {
   margin-bottom: 60px;
 }
 
-.color-purple{
+.color-purple {
   color: rgba(56, 29, 219, 1);
-
 }
 
 /* custom classes */
@@ -67,9 +67,8 @@ input {
   background: #381ddb !important;
 }
 
-.custom-width-two{
-  color:#381ddb !important;;
-
+.custom-width-two {
+  color: #381ddb !important;
 }
 
 .hero-section .text-one {
@@ -216,31 +215,30 @@ input {
   color: rgba(34, 34, 34, 0.7);
 }
 
-.section-2 .services{
+.section-2 .services {
   margin-top: 60px;
 }
-.section-2 .card{
-  max-width: 310px;
+.section-2 .card {
+  max-width: auto;
   height: 331px;
 }
 
-.section-2 .gap-custom{
+.section-2 .gap-custom {
   gap: 75px !important;
 }
 
-.section-2 .card{
+.section-2 .card {
   border-color: rgba(56, 29, 219, 1);
-  ;
 }
 
-.section-2 .card-image{
+.section-2 .card-image {
   max-height: 70px;
   max-width: 70px;
   color: #381ddb;
   fill: #381ddb;
 }
 
-.section-2 .text-heading{
+.section-2 .text-heading {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 800;
@@ -249,8 +247,7 @@ input {
   margin-top: 40px !important;
 }
 
-.section-2 .text-paragraph{
- 
+.section-2 .text-paragraph {
   font-family: Raleway;
   font-size: 16px;
   font-weight: 400;
@@ -259,23 +256,19 @@ input {
   margin-top: 17px !important;
 }
 
-
-
-
 @media only screen and (max-width: 425px) {
   .section-2 {
     margin-top: 0px;
-}
+  }
 
-
-  .section-2 .services{
+  .section-2 .services {
     margin-top: 24px;
   }
 
-  .section-2 .gap-custom{
+  .section-2 .gap-custom {
     gap: 16px !important;
   }
- 
+
   .section-2 .heading-text {
     font-family: Montserrat;
     font-size: 28px;
@@ -296,9 +289,23 @@ input {
   .section-2 .card {
     max-width: 100%;
     height: 331px;
+  }
 }
 
-  
+@media only screen and (max-width: 425px) {
+  .section-2 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 990px) {
+  .section-2 .card {
+    max-width: 100%;
+    height: 381px;
+  }
+  .section-2 .gap-custom {
+    gap: 16px !important;
+  }
 }
 
 /* section-3 css */
@@ -313,17 +320,16 @@ input {
   background-position: center;
 }
 
-.mt-custom-section-3{
+.mt-custom-section-3 {
   margin-top: 130px !important;
 }
 
-.height-500px{
+.height-500px {
   height: 500px;
 }
 
 @media only screen and (max-width: 425px) {
-
-  .mt-custom-section-3{
+  .mt-custom-section-3 {
     margin-top: 0px !important;
   }
   .custom-bg-img {
@@ -385,4 +391,131 @@ input {
   .section-3 .mt-custom {
     margin-top: 48px;
   }
+}
+
+/* section 4 css */
+
+.section-4 .img-mt-40{
+  margin-top: 0px;
+
+}
+
+.section-4 .heading-text {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44.2px;
+  text-align: left;
+  color: rgba(34, 34, 34, 1);
+}
+
+.section-4 .paragraph-text {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(34, 34, 34, 1);
+  max-width: 530px;
+
+
+}
+.section-4 .mt-60px {
+  margin-top: 60px;
+}
+
+.section-4 .mt-42px {
+  margin-top: 42px !important ;
+}
+
+.section-4 .mt-32px {
+  margin-top: 42px !important ;
+}
+
+.section-4 {
+  margin-top: 130px !important;
+}
+.section-4 .text-link {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.section-4 .mt-48px {
+  margin-top: 48px !important ;
+}
+.section-4 .image-div  img{
+  width: -webkit-fill-available;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .section-4 {
+    margin-top: 0px !important;
+  }
+  .section-4 .heading-text {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    text-align: left;
+
+    color: rgba(34, 34, 34, 1);
+  }
+
+  .section-4 .paragraph-text {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(34, 34, 34, 1);
+  }
+ 
+
+  .section-4 .text-link {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .section-4 .img-mt-40{
+    margin-top: 40px;
+
+  }
+  .section-4 .mt-42px {
+    margin-top: 0px !important ;
+  }
+}
+
+.section-4 .width-fit{
+  width: fit-content !important;
+}
+
+@media (min-width:426px) and (max-width: 1023px) {
+ 
+
+  .section-4 .img-mt-40{
+    margin-top: 40px;
+
+  }
+ 
+}
+
+.section-4 .img-height-90{
+  height: 100%;
+
+}
+
+@media (min-width:1027px) and (max-width: 1440px) {
+ 
+
+  .section-4 .img-height-90{
+    height: 90%;
+
+  }
+ 
 }
