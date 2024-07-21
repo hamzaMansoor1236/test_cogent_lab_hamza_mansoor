@@ -1,0 +1,274 @@
+/* resetting default margins and paddings  */
+p,
+h1 {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+
+
+/* global classes */
+
+.font-montserrat {
+  /* custom font family and fallback font respectively */
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-raleway {
+  /* custom font family and fallback font respectively */
+  font-family: "Raleway", sans-serif;
+}
+
+.border-grey {
+  border: 1px solid #a3a3a3;
+}
+
+::placeholder {
+  color: black !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  height: 50px;
+}
+
+/* custom classes */
+
+.custom-background-purple {
+  background: #381ddb !important;
+}
+
+.hero-section .text-one {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #222222;
+}
+
+.hero-section .custom-width-one {
+  max-width: 832px;
+}
+.hero-section .custom-width-two {
+  max-width: 583px;
+}
+
+.hero-section .custom-width-three {
+  max-width: 524px;
+}
+
+.hero-section .custom-width-four {
+  width: 350px;
+}
+
+.hero-section .input-height {
+  height: auto;
+}
+@media only screen and (max-width: 425px) {
+  .hero-section .custom-width-one {
+    max-width: 335px;
+  }
+  .hero-section .custom-width-two {
+    max-width: 334px;
+  }
+
+  .hero-section .custom-width-three {
+    width: auto;
+  }
+
+  .hero-section .input-height {
+    height: 42px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-section .custom-width-four {
+    width: auto;
+  }
+}
+
+.hero-section .custom-line-height-h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 68.26px !important;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-section .custom-line-height-h1 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px !important;
+    text-align: center;
+  }
+}
+
+.hero-section .mt-custom-one {
+  margin-top: 40px;
+}
+
+.hero-section .mt-custom-two {
+  margin-top: 56px;
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-section .mt-custom-one {
+    margin-top: 16px;
+  }
+  .hero-section .mt-custom-two {
+    margin-top: 40px;
+  }
+
+  .hero-section .text-one {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+
+    text-align: center;
+  }
+
+  .hero-section .custom-style-button {
+    width: 157px;
+    height: auto;
+  }
+}
+
+ .custom-style-button {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 425px) {
+   .custom-style-button {
+    width: 157px;
+    height: 42px;
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+}
+
+
+
+/* section-3 css */
+
+
+
+
+
+
+/* custom-bg-img */
+.custom-bg-img{
+
+  /* The image brightness is reduced via online tool to attain the nearest possible tone to the figma image */
+  background-image: url('../img/image.png');
+
+  background-size: 100vw 100vh;
+  background-repeat:no-repeat;
+  background-position:center;
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  .custom-bg-img{
+
+   
+  
+   
+
+    background-size: cover;
+  
+  
+  }
+
+  .section-3 .mt-custom-two{
+    margin-top: 93px;
+  }
+  .custom-width-container-effect
+  {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  
+  
+}
+
+
+
+
+.section-3 .bigger-font{
+  font-family: Montserrat;
+font-size: 64px;
+font-weight: 800;
+line-height: 78.02px;
+text-align: center;
+color: #FFFFFF;
+
+
+}
+
+.section-3 .smaller-font{
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.section-3 .mt-custom{
+  margin-top: 100px;
+}
+
+
+.section-3 .mt-custom-two{
+  margin-top: 93px;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .section-3 .bigger-font{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43.88px;
+    text-align: center;
+  
+  }
+  
+  .section-3 .smaller-font{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    text-align: center;
+    
+  
+  }
+
+  .section-3 .mt-custom{
+    margin-top: 48px;
+  }
+}

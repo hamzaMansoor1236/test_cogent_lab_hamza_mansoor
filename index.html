@@ -5,35 +5,157 @@
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Title of page to be displayed in browser tab -->
     <title>udix - Test Cogent Lab</title>
 
-    <!-- favicons for the  -->
+    <!-- favicons for the web browser and iphone home screen respectively  -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- main style sheet -->
     <link href="assets/css/main.css" rel="stylesheet">
 
+    <!-- Bootstrap style sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- nav bar scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap icons cdn -->
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 </head>
 
-<body>
+<body class="">
 
 
     <!-- navbar  -->
-    <header id="header" class="header sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Profile</a>
+                    <a href="#" class="nav-item nav-link">Messages</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
-    </header>
+
+    <!-- main content  -->
+    <main class="main ">
+
+        <!-- Section 1 hero section -->
+        <section class="hero-section  container">
+            <div class="   mx-auto  text-center custom-width-one">
+
+                <div>
+                    <h1 class="display-4 text-center fw-bold font-montserrat  px-md-0 custom-line-height-h1  ">Get
+                        It
+                        Together And Manage
+                        Projects The Right Way.</h1>
+                </div>
 
 
-    <!-- main content section -->
-    <main class="main">
-        <section id="services" class="services section">
-            <div class="container section-title">
-                <p> this is the main section</p>
+                <div class=" mx-auto mt-custom-one custom-width-two">
+                    <p class="   text-one font-raleway   ">udix is the world’s first smart
+                        workspace. We bring all your team’s
+                        content together while letting you use the tools you love.</p>
+                </div>
+
+
+
+                <div class="custom-width-three mt-custom-two mx-md-auto ">
+
+                    <form action="/action_page.php" class="d-flex flex-column flex-md-row  gap-3 gap-md-4 ">
+                        <input type="text" id="hero-email" name="fname"
+                            class="custom-width-four border border-1 rounded ps-3" placeholder="Email">
+                        <button type="submit"
+                            class="btn text-white custom-background-purple  font-raleway custom-style-button  mx-auto mx-md-0">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </section>
+
+
+        <!-- Section 2 hero section -->
+
+
+
+
+        <!-- section 3  -->
+
+        <section class="custom-width-container-effect">
+            <div class="section-3 px-2   custom-bg-img mb-5 mt-5 d-flex  flex-column" style="height: 500px;">
+
+                <div class="mt-custom ">
+                    <div class="  d-flex flex-column flex-md-row gap-4  justify-content-center ">
+
+
+                        <div class="col-md-3  text-center">
+
+                            <h1 class="bigger-font">1,000 M</h1>
+                            <p class="smaller-font mt-1 mt-md-3">Clicks annually through system</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+
+                            <h1 class="bigger-font">4.8 M</h1>
+                            <p class="smaller-font mt-1 mt-md-3 ">Relationships created annually</p>
+                        </div>
+                        <div class="col-md-3 text-center">
+
+                            <h1 class="bigger-font">100 +</h1>
+                            <p class="smaller-font mt-1 mt-md-3">Advertisers with udix</p>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="d-flex mt-custom-two">
+                        <button type="submit"
+                            class="btn text-white custom-background-purple  font-raleway custom-style-button  mx-auto ">Sign
+                            Up Now!</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
     </main>
 
 
@@ -44,8 +166,24 @@
     </footer>
 
 
-
+    <!-- Custom script file -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!--  -->
+
+
+
+
 
 </body>
 
